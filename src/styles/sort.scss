@@ -1,0 +1,33 @@
+.d-sortBox{
+  cursor: pointer;
+  .d-sortItem {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 14px;
+    width: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    overflow: initial;
+    position: relative;
+  
+    .sort-caret {
+      width: 0;
+      height: 0;
+      border: solid 5px transparent;
+      position: absolute;
+      left: 7px;
+  
+      &.ascending {
+        border-bottom-color: var(--el-text-color-placeholder);
+        top: -5px;
+      }
+  
+      &.descending {
+        border-top-color: var(--el-text-color-placeholder);
+        bottom: -3px;
+      }
+    }
+
+  }
+}

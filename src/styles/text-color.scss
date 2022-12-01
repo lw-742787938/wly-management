@@ -1,0 +1,7 @@
+@import "var";
+
+@each $name, $color in $text-colors {
+  .cr-#{$name} {
+    color: $color!important;
+  }
+}

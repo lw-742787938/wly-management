@@ -1,0 +1,24 @@
+@import "var";
+
+@for $size from 12 through $font-size-px-through {
+  .fs-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+@each $type in bold normal lighter {
+  .#{$type} {
+    font-weight: bold;
+  }
+}
+@each $type in bolder {
+  .#{$type} {
+    font-weight: bolder;
+  }
+}
+
+@each $weight in 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+  .fw-#{$weight} {
+    font-weight: $weight;
+  }
+}

@@ -1,0 +1,16 @@
+
+@forward '../../node_modules/element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #DF0615,
+    ),
+  ),
+  // $menu:(
+  //   'bg-color':#DF0615,
+  // )
+);
+
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+ @use "../../node_modules/element-plus/theme-chalk/src/common/var.scss" as *;
+

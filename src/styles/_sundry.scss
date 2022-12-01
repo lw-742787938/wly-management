@@ -1,0 +1,15 @@
+// 文字溢出处理
+.overflow-omit {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@for $line from 1 through 3 {
+  .overflow-#{$line} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+  }
+}

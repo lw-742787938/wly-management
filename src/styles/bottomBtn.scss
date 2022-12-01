@@ -1,0 +1,33 @@
+.bottomBtnItem {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  // height: 70px;
+  background-color: #fff;
+  width: 100vw;
+  padding: 0px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+  box-shadow: 2px -3px 10px 0px rgba(0, 0, 0, 0.05);
+  &.block {
+    grid-template-columns: 1fr;
+  }
+  .leftBtn,
+  .rightBtn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .leftBtn {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #af1e24;
+    font-size: 14px;
+  }
+  .rightBtn {
+    height: 40px;
+    background: #af1e24;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}
